@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MoneyBoxLite</string>
+
+    <!--SignInActivity-->
+    <string name="welcome_txt">Welcome To MoneyBox</string>
+    <string name="log_in_txt">Log In</string>
+    <string name="email_address_txt">Email Address</string>
+    <string name="password_txt">Password</string>
 </resources>
