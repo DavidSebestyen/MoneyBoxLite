@@ -6,4 +6,32 @@
     <string name="log_in_txt">Log In</string>
     <string name="email_address_txt">Email Address</string>
     <string name="password_txt">Password</string>
+    <string name="generic_logging_in_txt">Logging in…</string>
+    <string name="wrong_log_in_txt">Wrong log in details, please try again</string>
+
+
+    <!--UserPageActivity-->
+    <string name="no_products_available_txt">No products available</string>
+    <string name="logout_session_ended_text">Sorry your session ended</string>
+    <string name="timer_warning_txt">You have one minute until your session ends!</string>
+    <string name="successful_log_out_txt">Successfully logged out</string>
+    <string name="yes_txt">Yes</string>
+    <string name="log_out_question_txt">Are you sure you want to log out?</string>
+    <string name="welcome_back_txt">Welcome back</string>
+    <string name="loading_details_txt">Loading your details</string>
+    <string name="your_accounts_txt">Your Accounts</string>
+
+    <!--AccountDetailsActivity-->
+    <string name="procees_money_txt">Processing transaction</string>
+    <string name="your_moneybox_txt">Your Moneybox:</string>
+    <string name="add_money_btn_txt">Add £10 to my Moneybox</string>
+
+    <!--common-->
+    <string name="generic_error_txt">Something went wrong please try again</string>
+    <string name="ok_txt">OK</string>
+    <string name="no_txt">No</string>
+    <string name="dialog_attention_txt">Attention</string>
+    <string name="pound_sign_txt">£</string>
+
+
 </resources>
