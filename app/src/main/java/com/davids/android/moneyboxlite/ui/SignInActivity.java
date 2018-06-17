@@ -61,8 +61,8 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         progressDoalog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDoalog.show();
 
-//        UserLogIn userLogIn = new UserLogIn(mUserNameEditText.getText().toString(), mPasswordEditText.getText().toString());
-        UserLogIn userLogIn = new UserLogIn("test+env12@moneyboxapp.com", "Money$$box@107");
+        UserLogIn userLogIn = new UserLogIn(mUserNameEditText.getText().toString(), mPasswordEditText.getText().toString());
+//        UserLogIn userLogIn = new UserLogIn("test+env12@moneyboxapp.com", "Money$$box@107");
         RetrofitInterface service = RetrofitClient.getRetrofitInstance().create(RetrofitInterface.class);
         Call<UserLogInResponse> call = service.sendLogIn(userLogIn);
         call.enqueue(new Callback<UserLogInResponse>() {
