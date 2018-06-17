@@ -116,20 +116,6 @@ public class AccountDetailsActivity extends AppCompatActivity implements View.On
         sessionTimer = new CountDownTimer(mSessionTimerProgress, SESSION_COUNTDOWN_TICK_TIME) {
             @Override
             public void onTick(long millisUntilFinished) {
-                mSessionTimerProgress = millisUntilFinished;
-                if(millisUntilFinished <= 60000){
-                    AlertDialog.Builder dialog = new AlertDialog.Builder(AccountDetailsActivity.this);
-                    dialog.setTitle(R.string.dialog_attention_txt);
-                    dialog.setMessage(R.string.timer_warning_txt);
-                    dialog.setPositiveButton(R.string.ok_txt, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-
-                    dialog.show();
-                }
             }
 
             @Override

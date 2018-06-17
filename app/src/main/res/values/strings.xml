@@ -17,7 +17,7 @@
     <string name="successful_log_out_txt">Successfully logged out</string>
     <string name="yes_txt">Yes</string>
     <string name="log_out_question_txt">Are you sure you want to log out?</string>
-    <string name="welcome_back_txt">Welcome back</string>
+    <string name="welcome_back_txt">Welcome back </string>
     <string name="loading_details_txt">Loading your details</string>
     <string name="your_accounts_txt">Your Accounts</string>
 

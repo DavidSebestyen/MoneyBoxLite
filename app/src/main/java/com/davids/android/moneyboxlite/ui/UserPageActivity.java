@@ -142,6 +142,8 @@ public class UserPageActivity extends AppCompatActivity{
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if(response.isSuccessful()){
                     Toast.makeText(UserPageActivity.this, logOutMessage, Toast.LENGTH_SHORT).show();
+                    Intent startSingInActivityIntent = new Intent(UserPageActivity.this, SignInActivity.class);
+                    startActivity(startSingInActivityIntent);
                     finish();
                 } else {
                     Toast.makeText(UserPageActivity.this, R.string.generic_error_txt, Toast.LENGTH_SHORT).show();
@@ -183,19 +185,6 @@ public class UserPageActivity extends AppCompatActivity{
             @Override
             public void onTick(long millisUntilFinished) {
                 mSessionTimerProgress = millisUntilFinished;
-                if(millisUntilFinished <= 60000){
-                    AlertDialog.Builder dialog = new AlertDialog.Builder(UserPageActivity.this);
-                    dialog.setTitle(R.string.dialog_attention_txt);
-                    dialog.setMessage(R.string.timer_warning_txt);
-                    dialog.setPositiveButton(R.string.ok_txt, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-
-                    dialog.show();
-                }
             }
 
             @Override
